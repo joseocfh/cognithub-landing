@@ -102,7 +102,7 @@ export const HeroCarousel = () => {
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-background/80 backdrop-blur-sm border-border hover:bg-muted smooth-transition"
+        className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 bg-background/80 backdrop-blur-sm border-border hover:bg-muted smooth-transition"
         onClick={prevSlide}
       >
         <ChevronLeft className="w-6 h-6 text-foreground" />
@@ -111,7 +111,7 @@ export const HeroCarousel = () => {
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-background/80 backdrop-blur-sm border-border hover:bg-muted smooth-transition"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 bg-background/80 backdrop-blur-sm border-border hover:bg-muted smooth-transition"
         onClick={nextSlide}
       >
         <ChevronRight className="w-6 h-6 text-foreground" />
