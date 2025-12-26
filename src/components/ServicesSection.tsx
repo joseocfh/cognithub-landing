@@ -20,7 +20,7 @@ const services: Service[] = [
   {
     id: 2,
     title: "Prestação de Serviços Terceirizados em TI",
-    description: "Analista de TI remoto contratado para oferecer suporte especializado sem vínculo interno com a empresa. Atendimento ágil e profissional para resolver demandas técnicas conforme contrato de prestação de serviços.",
+    description: "Suporte remoto especializado para atender às demandas técnicas da sua empresa de forma ágil e profissional, sem vínculo interno.",
     icon: Headset,
     features: ["Atendimento remoto sob demanda", "Resolução de chamados com SLA definido", "Suporte especializado terceirizado"]
   },
