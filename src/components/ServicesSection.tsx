@@ -1,67 +1,42 @@
-import { Bot, Code, Globe, Database, Zap, Cpu } from "lucide-react";
+import { Server, Headset, Bot, Code } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import aiAutomationIcon from "@/assets/ai-automation-icon.png";
-import webscrapingIcon from "@/assets/webscraping-icon.png";
-import webDevIcon from "@/assets/web-dev-icon.png";
-import programmingIcon from "@/assets/programming-icon.png";
 
 interface Service {
   id: number;
   title: string;
   description: string;
-  icon: string;
-  fallbackIcon: React.ComponentType<any>;
+  icon: React.ComponentType<any>;
   features: string[];
 }
 
 const services: Service[] = [
   {
     id: 1,
-    title: "Automação com Agentes de IA",
-    description: "Sistemas inteligentes que automatizam tarefas complexas e tomam decisões baseadas em dados.",
-    icon: aiAutomationIcon,
-    fallbackIcon: Bot,
-    features: ["Processamento de linguagem natural", "Tomada de decisões autônoma", "Aprendizado contínuo"]
+    title: "Consultorias de Infraestrutura em TI e CFTV",
+    description: "Planejamento e implementação de soluções de infraestrutura tecnológica e sistemas de videomonitoramento.",
+    icon: Server,
+    features: ["Análise de infraestrutura", "Projetos de CFTV", "Otimização de redes"]
   },
   {
     id: 2,
-    title: "Web Scraping Inteligente",
-    description: "Extração automatizada de dados de websites com alta precisão e velocidade.",
-    icon: webscrapingIcon,
-    fallbackIcon: Database,
-    features: ["Extração em massa", "Dados estruturados", "Monitoramento contínuo"]
+    title: "Suporte Técnico Remoto",
+    description: "Helpdesk interno com atendimento especializado para resolver problemas técnicos de forma ágil.",
+    icon: Headset,
+    features: ["Atendimento remoto", "Resolução de chamados", "Suporte especializado"]
   },
   {
     id: 3,
-    title: "Criação de Páginas Web",
-    description: "Desenvolvimento de aplicações web modernas, responsivas e otimizadas.",
-    icon: webDevIcon,
-    fallbackIcon: Globe,
-    features: ["Design responsivo", "Performance otimizada", "SEO integrado"]
+    title: "Automações e IA",
+    description: "Soluções inteligentes para automatizar processos e potencializar resultados com inteligência artificial.",
+    icon: Bot,
+    features: ["Automação de processos", "Agentes de IA com n8n", "Integrações de Sistemas", "Web Scraping"]
   },
   {
     id: 4,
     title: "Programação Personalizada",
-    description: "Soluções sob medida para suas necessidades específicas de negócio.",
-    icon: programmingIcon,
-    fallbackIcon: Code,
-    features: ["Arquitetura escalável", "Integração de APIs", "Manutenção contínua"]
-  },
-  {
-    id: 5,
-    title: "Automação de Processos",
-    description: "Otimização de fluxos de trabalho através de automação inteligente.",
-    icon: programmingIcon,
-    fallbackIcon: Zap,
-    features: ["Redução de custos", "Aumento de eficiência", "Monitoramento em tempo real"]
-  },
-  {
-    id: 6,
-    title: "Integração de Sistemas",
-    description: "Conectamos diferentes plataformas e sistemas para trabalhar em harmonia.",
-    icon: aiAutomationIcon,
-    fallbackIcon: Cpu,
-    features: ["APIs personalizadas", "Sincronização de dados", "Arquitetura robusta"]
+    description: "Desenvolvimento de soluções sob medida para atender às necessidades específicas do seu negócio.",
+    icon: Code,
+    features: ["Criação de páginas web", "Soluções sob medida"]
   }
 ];
 
@@ -79,51 +54,39 @@ export const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card 
-              key={service.id} 
-              className="card-gradient hover:scale-105 smooth-transition cursor-pointer group animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 relative group-hover:scale-110 smooth-transition">
-                  <img
-                    src={service.icon}
-                    alt={service.title}
-                    className="w-full h-full object-contain"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                      const parent = target.parentElement;
-                      if (parent) {
-                        const IconComponent = service.fallbackIcon;
-                        const iconElement = document.createElement('div');
-                        iconElement.className = 'w-16 h-16 text-primary';
-                        parent.appendChild(iconElement);
-                      }
-                    }}
-                  />
-                </div>
-                <CardTitle className="text-xl font-bold group-hover:text-primary smooth-transition">
-                  {service.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-center mb-6 text-muted-foreground">
-                  {service.description}
-                </CardDescription>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-foreground/80">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <Card 
+                key={service.id} 
+                className="card-gradient hover:scale-105 smooth-transition cursor-pointer group animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardHeader className="text-center pb-4">
+                  <div className="w-16 h-16 mx-auto mb-4 relative group-hover:scale-110 smooth-transition flex items-center justify-center">
+                    <IconComponent className="w-12 h-12 text-primary" />
+                  </div>
+                  <CardTitle className="text-xl font-bold group-hover:text-primary smooth-transition">
+                    {service.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-center mb-6 text-muted-foreground">
+                    {service.description}
+                  </CardDescription>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center text-sm text-foreground/80">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
