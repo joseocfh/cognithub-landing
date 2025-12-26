@@ -313,7 +313,7 @@ export const ContactSection = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="(86) 9 8839-2791"
+                        placeholder="(xx) x xxxx-xxxx"
                         disabled={isSubmitting}
                         className={`bg-input border-border focus:border-primary transition-colors ${errors.phone ? 'border-destructive' : ''}`}
                         aria-label="Número de telefone"
