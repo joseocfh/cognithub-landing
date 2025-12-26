@@ -19,10 +19,10 @@ const services: Service[] = [
   },
   {
     id: 2,
-    title: "Suporte Técnico Remoto",
-    description: "Helpdesk interno com atendimento especializado para resolver problemas técnicos de forma ágil.",
+    title: "Prestação de Serviços Terceirizados em TI",
+    description: "Analista de TI remoto contratado para oferecer suporte especializado sem vínculo interno com a empresa. Atendimento ágil e profissional para resolver demandas técnicas conforme contrato de prestação de serviços.",
     icon: Headset,
-    features: ["Atendimento remoto", "Resolução de chamados", "Suporte especializado"]
+    features: ["Atendimento remoto sob demanda", "Resolução de chamados com SLA definido", "Suporte especializado terceirizado"]
   },
   {
     id: 3,
