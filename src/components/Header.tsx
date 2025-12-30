@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={fluxCodeLogo} alt="FluxCode Logo" className="h-16 w-auto" />
+            <img src={fluxCodeLogo} alt="CognitHub Logo" className="h-16 w-auto" />
           </div>
 
           {/* Navigation */}

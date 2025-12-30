@@ -11,7 +11,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex justify-center md:justify-start">
-              <img src={fluxCodeLogo} alt="FluxCode Logo" className="h-28 w-auto" />
+              <img src={fluxCodeLogo} alt="CognitHub Logo" className="h-28 w-auto" />
             </div>
             <p className="text-muted-foreground text-sm text-center md:text-left">
               Transformando negócios através de automação inteligente e 
@@ -132,10 +132,10 @@ export const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                 <a 
-                  href="mailto:maricesa.sousa@fluxcodethe.com.br"
+                  href="mailto:maricesa.sousa@cognithub.com.br"
                   className="text-muted-foreground hover:text-primary smooth-transition text-sm"
                 >
-                  maricesa.sousa@fluxcodethe.com.br
+                  maricesa.sousa@cognithub.com.br
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -159,7 +159,7 @@ export const Footer = () => {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} FluxCode. Todos os direitos reservados.
+            © {currentYear} CognitHub. Todos os direitos reservados.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-primary smooth-transition text-sm">

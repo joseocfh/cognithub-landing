@@ -15,7 +15,7 @@ const slides: CarouselSlide[] = [
   {
     id: 1,
     image: heroBg,
-    title: "FluxCode - Serviços de TI e Automação sob Medida",
+    title: "CognitHub - Serviços de TI e Automação sob Medida",
     description: "Consultoria, suporte remoto e automação inteligente para impulsionar o crescimento da sua empresa.",
     cta: "Saiba Mais"
   },
