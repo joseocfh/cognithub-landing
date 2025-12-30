@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
     name: "Daysson Furtado",
     role: "Diretor Executivo",
     company: "Jump86",
-    content: "A FluxCode superou completamente minhas expectativas. Eu já conhecia o potencial da inteligência artificial, mas ver os agentes da FluxCode em ação foi transformador. Processos que antes levavam horas agora são resolvidos em minutos, sem perda de qualidade e, o melhor, com uma precisão impressionante.",
+    content: "A CognitHub superou completamente minhas expectativas. Eu já conhecia o potencial da inteligência artificial, mas ver os agentes da CognitHub em ação foi transformador. Processos que antes levavam horas agora são resolvidos em minutos, sem perda de qualidade e, o melhor, com uma precisão impressionante.",
     rating: 5
   },
   {
@@ -32,7 +32,7 @@ const testimonials: Testimonial[] = [
     name: "Tiago Teixeira",
     role: "Owner & Tech Manager",
     company: "T&T Technology",
-    content: "Contratar a FluxCode foi, sem dúvida, uma das melhores decisões que tomei para o meu negócio. Desde o primeiro contato, a equipe demonstrou profissionalismo, agilidade e um profundo conhecimento técnico. O projeto foi entregue dentro do prazo, com uma qualidade que superou minhas expectativas. Além disso, o suporte após a entrega tem sido impecável. Recomendo fortemente a FluxCode para quem busca soluções digitais eficientes, personalizadas e com um atendimento de excelência.",
+    content: "Contratar a CognitHub foi, sem dúvida, uma das melhores decisões que tomei para o meu negócio. Desde o primeiro contato, a equipe demonstrou profissionalismo, agilidade e um profundo conhecimento técnico. O projeto foi entregue dentro do prazo, com uma qualidade que superou minhas expectativas. Além disso, o suporte após a entrega tem sido impecável. Recomendo fortemente a CognitHub para quem busca soluções digitais eficientes, personalizadas e com um atendimento de excelência.",
     rating: 5
   }
 ];

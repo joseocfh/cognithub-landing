@@ -48,10 +48,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       message: message.trim(),
     };
 
-    // Send notification email to FluxCode
+    // Send notification email to CognitHub
     const notificationEmail = await resend.emails.send({
-      from: 'FluxCode Website <contato@fluxcodethe.com.br>',
-      to: ['maricesa.sousa@fluxcodethe.com.br'],
+      from: 'CognitHub Website <contato@cognithub.com.br>',
+      to: ['maricesa.sousa@cognithub.com.br'],
       subject: `Novo contato via site - ${sanitizedData.name}`,
       html: `
         <!DOCTYPE html>
@@ -72,7 +72,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           <body>
             <div class="container">
               <div class="header">
-                <h1 style="margin: 0;">🚀 Novo Lead - FluxCode</h1>
+                <h1 style="margin: 0;">🚀 Novo Lead - CognitHub</h1>
                 <p style="margin: 10px 0 0 0; opacity: 0.9;">Recebido em ${new Date().toLocaleString('pt-BR', { timeZone: 'America/Fortaleza' })}</p>
               </div>
               <div class="content">
@@ -97,7 +97,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                   <div class="value">${sanitizedData.message.replace(/\n/g, '<br>')}</div>
                 </div>
                 <div class="footer">
-                  <p>Este email foi enviado automaticamente pelo formulário de contato do site FluxCode.</p>
+                  <p>Este email foi enviado automaticamente pelo formulário de contato do site CognitHub.</p>
                 </div>
               </div>
             </div>
@@ -108,9 +108,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // Send confirmation email to the client
     const confirmationEmail = await resend.emails.send({
-      from: 'FluxCode <contato@fluxcodethe.com.br>',
+      from: 'CognitHub <contato@cognithub.com.br>',
       to: [sanitizedData.email],
-      subject: 'Recebemos sua mensagem - FluxCode',
+      subject: 'Recebemos sua mensagem - CognitHub',
       html: `
         <!DOCTYPE html>
         <html>
@@ -143,12 +143,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 <p>Enquanto isso, fique à vontade para conhecer mais sobre nossos serviços de automação inteligente com IA.</p>
                 
                 <p style="text-align: center;">
-                  <a href="https://fluxcodethe.com.br" class="button">Visitar Website</a>
+                  <a href="https://cognithub.com.br" class="button">Visitar Website</a>
                 </p>
                 
                 <div class="footer">
-                  <p><strong>FluxCode - Automação Inteligente</strong></p>
-                  <p>📧 maricesa.sousa@fluxcodethe.com.br | 📱 +55 (86) 9 8839 2791</p>
+                  <p><strong>CognitHub - Automação Inteligente</strong></p>
+                  <p>📧 maricesa.sousa@cognithub.com.br | 📱 +55 (86) 9 8839 2791</p>
                   <p>Teresina, PI - Brasil</p>
                 </div>
               </div>

@@ -32,7 +32,7 @@ export const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gradient">
-                Sobre a FluxCode
+                Sobre a CognitHub
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
@@ -111,7 +111,7 @@ export const AboutSection = () => {
             <Card className="card-gradient p-8">
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Por que escolher a FluxCode?
+                  Por que escolher a CognitHub?
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">

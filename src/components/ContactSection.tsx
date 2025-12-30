@@ -34,8 +34,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "maricesa.sousa@fluxcodethe.com.br",
-    link: "mailto:maricesa.sousa@fluxcodethe.com.br"
+    content: "maricesa.sousa@cognithub.com.br",
+    link: "mailto:maricesa.sousa@cognithub.com.br"
   },
   {
     icon: Phone,
