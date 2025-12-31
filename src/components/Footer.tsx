@@ -11,7 +11,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex justify-center md:justify-start">
-              <img src={cognitHubLogo} alt="CognitHub Logo" className="h-24 w-auto" />
+              <img src={cognitHubLogo} alt="CognitHub Logo" className="h-[6.5rem] w-auto" />
             </div>
             <p className="text-muted-foreground text-sm text-center md:text-left">
               Transformando negócios através de automação inteligente e 
