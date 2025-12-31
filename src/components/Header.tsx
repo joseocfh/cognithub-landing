@@ -1,4 +1,4 @@
-import fluxCodeLogo from "@/assets/logo_fluxcode_new.png";
+import cognitHubLogo from "@/assets/cognithub-logo.png";
 import { Button } from "@/components/ui/button";
 
 export const Header = () => {
@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={fluxCodeLogo} alt="CognitHub Logo" className="h-16 w-auto" />
+            <img src={cognitHubLogo} alt="CognitHub Logo" className="h-12 w-auto" />
           </div>
 
           {/* Navigation */}

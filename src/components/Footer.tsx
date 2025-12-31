@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
-import fluxCodeLogo from "@/assets/logo_fluxcode_new.png";
+import cognitHubLogo from "@/assets/cognithub-logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex justify-center md:justify-start">
-              <img src={fluxCodeLogo} alt="CognitHub Logo" className="h-28 w-auto" />
+              <img src={cognitHubLogo} alt="CognitHub Logo" className="h-16 w-auto" />
             </div>
             <p className="text-muted-foreground text-sm text-center md:text-left">
               Transformando negócios através de automação inteligente e 
@@ -40,7 +40,7 @@ export const Footer = () => {
                   onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
                   className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
                 >
-                  Automação com IA
+                  Consultorias de TI e CFTV
                 </a>
               </li>
               <li>
@@ -49,7 +49,7 @@ export const Footer = () => {
                   onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
                   className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
                 >
-                  Web Scraping
+                  Serviços Terceirizados em TI
                 </a>
               </li>
               <li>
@@ -58,7 +58,7 @@ export const Footer = () => {
                   onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
                   className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
                 >
-                  Desenvolvimento Web
+                  Automações e IA
                 </a>
               </li>
               <li>
@@ -68,15 +68,6 @@ export const Footer = () => {
                   className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
                 >
                   Programação Personalizada
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#servicos" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Integração de Sistemas
                 </a>
               </li>
             </ul>
