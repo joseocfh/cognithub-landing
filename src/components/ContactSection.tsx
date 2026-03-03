@@ -40,8 +40,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefone",
-    content: "+55 (86) 9 8839 2791",
-    link: "tel:+558698392791"
+    content: "(86) 9 9811 7348",
+    link: "tel:+5586998117348"
   },
   {
     icon: MapPin,

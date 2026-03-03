@@ -35,6 +35,13 @@ export const Header = () => {
               Sobre
             </a>
             <a 
+              href="#portfolio" 
+              onClick={(e) => { e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="text-muted-foreground hover:text-primary smooth-transition cursor-pointer"
+            >
+              Portfólio
+            </a>
+            <a 
               href="#depoimentos" 
               onClick={(e) => { e.preventDefault(); document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' }); }}
               className="text-muted-foreground hover:text-primary smooth-transition cursor-pointer"
