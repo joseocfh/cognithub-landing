@@ -29,7 +29,7 @@ const services: Service[] = [
     title: "Automações e IA",
     description: "Soluções inteligentes para automatizar processos e potencializar resultados com inteligência artificial.",
     icon: Bot,
-    features: ["Automação de processos", "Agentes de IA com n8n", "Integrações de Sistemas", "Web Scraping"]
+    features: ["Automação de processos", "Agentes de IA com n8n", "Integrações de Sistemas", "Web Scraping", "Automações com Excel", "Dashboards"]
   },
   {
     id: 4,
@@ -48,10 +48,6 @@ export const ServicesSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gradient">
             Nossas Especialidades
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferecemos soluções completas em automação e desenvolvimento, 
-            combinando inteligência artificial com tecnologias modernas.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

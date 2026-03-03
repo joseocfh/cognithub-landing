@@ -31,23 +31,21 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gradient">
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 pb-1 text-gradient">
                 Sobre a CognitHub
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  Somos uma empresa especializada em <strong className="text-foreground">automação inteligente</strong> e 
-                  desenvolvimento de soluções tecnológicas avançadas. Nossa missão é transformar a forma 
-                  como as empresas operam através da implementação de agentes de IA e sistemas automatizados.
+                  A CognitHub é uma startup de tecnologia que transforma <strong className="text-foreground">desafios operacionais</strong> em soluções inteligentes e lucrativas.
                 </p>
                 <p>
-                  Com uma equipe de especialistas em inteligência artificial, desenvolvimento web e automação 
-                  de processos, entregamos soluções que <strong className="text-foreground">aumentam a produtividade</strong>, 
-                  reduzem custos operacionais e proporcionam vantagem competitiva no mercado.
+                  Atuamos com <strong className="text-foreground">Consultoria em Infraestrutura de TI e CFTV</strong>, estruturando ambientes seguros, estáveis e preparados para crescer. Oferecemos <strong className="text-foreground">Serviços Terceirizados de TI</strong>, garantindo suporte especializado e gestão proativa para que sua empresa foque no que realmente importa: resultados.
                 </p>
                 <p>
-                  Nossa abordagem combina tecnologias de ponta com metodologias ágeis, garantindo 
-                  entregas rápidas e eficientes que superam as expectativas dos nossos clientes.
+                  Desenvolvemos <strong className="text-foreground">Automações e Soluções com Inteligência Artificial</strong> que reduzem custos, eliminam retrabalho e aumentam a produtividade. Além disso, criamos <strong className="text-foreground">Sistemas e Programações Personalizadas</strong>, adaptadas à realidade do seu negócio.
+                </p>
+                <p>
+                  Mais do que tecnologia, entregamos <strong className="text-foreground">eficiência, segurança e vantagem competitiva</strong>.
                 </p>
               </div>
             </div>
