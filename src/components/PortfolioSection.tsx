@@ -52,7 +52,7 @@ export const PortfolioSection = () => {
             Nosso Portfólio
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Conheça alguns dos projetos que desenvolvemos para nossos clientes.
+            Conheça alguns exemplos dos projetos que desenvolvemos para nossos clientes.
           </p>
         </div>
 
