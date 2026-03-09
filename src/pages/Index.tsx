@@ -1,22 +1,28 @@
-import { Header } from "@/components/Header";
-import { HeroCarousel } from "@/components/HeroCarousel";
-import { ServicesSection } from "@/components/ServicesSection";
-import { AboutSection } from "@/components/AboutSection";
-import { PortfolioSection } from "@/components/PortfolioSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { ContactSection } from "@/components/ContactSection";
-import { Footer } from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ChallengesSection from "@/components/ChallengesSection";
+import SolutionsSection from "@/components/SolutionsSection";
+import ProcessSection from "@/components/ProcessSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import AutomationSection from "@/components/AutomationSection";
+import ResultsSection from "@/components/ResultsSection";
+import AboutSection from "@/components/AboutSection";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Header />
-      <HeroCarousel />
-      <ServicesSection />
+      <Navbar />
+      <HeroSection />
+      <ChallengesSection />
+      <SolutionsSection />
+      <ProcessSection />
+      <ProjectsSection />
+      <AutomationSection />
+      <ResultsSection />
       <AboutSection />
-      <PortfolioSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <CTASection />
       <Footer />
     </div>
   );

@@ -1,170 +1,60 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
-import cognitHubLogo from "@/assets/cognithub-logo.png";
+import { Mail, Linkedin, Instagram, Github } from "lucide-react";
+import logo from "@/assets/logo_header.png";
 
-export const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
+const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-card to-muted/30 border-t border-border">
-      <div className="container mx-auto px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex justify-center md:justify-start">
-              <img src={cognitHubLogo} alt="CognitHub Logo" className="h-[6.5rem] w-auto" />
-            </div>
-            <p className="text-muted-foreground text-sm text-center md:text-left">
-              Transformando negócios através de automação inteligente e 
-              agentes de IA. Soluções personalizadas para o futuro digital.
+    <footer className="border-t border-border/50 bg-surface">
+      <div className="container mx-auto px-4 lg:px-8 py-12">
+        <div className="grid md:grid-cols-3 gap-8 items-start">
+          <div className="flex flex-col items-center text-center">
+            <a href="#">
+              <img src={logo} alt="CognitHub" className="h-[75px]" />
+            </a>
+            <p className="text-sm text-muted-foreground mt-3 max-w-xs">
+              Transformando desafios operacionais em automação, eficiência e crescimento com tecnologia.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary smooth-transition hover:scale-110" aria-label="GitHub">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary smooth-transition hover:scale-110" aria-label="LinkedIn">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary smooth-transition hover:scale-110" aria-label="Instagram">
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
-          {/* Services */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-foreground">Serviços</h4>
-            <ul className="space-y-2">
-              <li>
-                <a 
-                  href="#servicos" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Consultorias de TI e CFTV
+          <div>
+            <h4 className="text-sm font-heading font-semibold mb-4">Navegação</h4>
+            <nav className="flex flex-col gap-2">
+              {[
+                { label: "Soluções", href: "#solucoes" },
+                { label: "Processo", href: "#processo" },
+                { label: "Projetos", href: "#projetos" },
+                { label: "Sobre", href: "#sobre" },
+              ].map((link) => (
+                <a key={link.href} href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  {link.label}
                 </a>
-              </li>
-              <li>
-                <a 
-                  href="#servicos" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Serviços Terceirizados em TI
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#servicos" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Automações e IA
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#servicos" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Programação Personalizada
-                </a>
-              </li>
-            </ul>
+              ))}
+            </nav>
           </div>
 
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-foreground">Links Rápidos</h4>
-            <ul className="space-y-2">
-              <li>
-                <a 
-                  href="#sobre" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Sobre Nós
+          <div>
+            <h4 className="text-sm font-heading font-semibold mb-4">Contato</h4>
+            <a href="mailto:contato@cognithub.com.br" className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2">
+              <Mail className="w-4 h-4" />
+              contato@cognithub.com.br
+            </a>
+            <div className="flex gap-3 mt-4">
+              {[Linkedin, Instagram, Github].map((Icon, i) => (
+                <a key={i} href="#" className="w-9 h-9 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-colors">
+                  <Icon className="w-4 h-4" />
                 </a>
-              </li>
-              <li>
-                <a 
-                  href="#servicos" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Nossos Serviços
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#depoimentos" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Depoimentos
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#contato" 
-                  onClick={(e) => { e.preventDefault(); document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' }); }}
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm cursor-pointer"
-                >
-                  Contato
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-foreground">Contato</h4>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a 
-                  href="mailto:maricesa.sousa@cognithub.com.br"
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm"
-                >
-                  maricesa.sousa@cognithub.com.br
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <a 
-                  href="tel:+5586998117348"
-                  className="text-muted-foreground hover:text-primary smooth-transition text-sm"
-                >
-                  (86) 9 9811 7348
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">
-                  Teresina, PI - Brasil
-                </span>
-              </div>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">
-            © {currentYear} CognitHub. Todos os direitos reservados.
+        <div className="border-t border-border/50 mt-10 pt-6 text-center">
+          <p className="text-xs text-muted-foreground">
+            © {new Date().getFullYear()} CognitHub. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-primary smooth-transition text-sm">
-              Política de Privacidade
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary smooth-transition text-sm">
-              Termos de Serviço
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary smooth-transition text-sm">
-              Cookies
-            </a>
-          </div>
         </div>
       </div>
     </footer>
   );
 };
+
+export default Footer;
