@@ -31,8 +31,14 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button variant="hero" size="sm">
-            Falar com especialista
+          <Button variant="hero" size="sm" asChild>
+            <a
+              href="https://wa.me/558699817348?text=Ol%C3%A1!%20Estou%20vindo%20da%20p%C3%A1gina%20da%20CognitHub%20e%20gostaria%20de%20falar%20com%20um%20especialista."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Falar com especialista
+            </a>
           </Button>
         </div>
 
@@ -63,8 +69,14 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="sm" className="w-full">
-                Falar com especialista
+              <Button variant="hero" size="sm" className="w-full" asChild>
+                <a
+                  href="https://wa.me/558699817348?text=Ol%C3%A1!%20Estou%20vindo%20da%20p%C3%A1gina%20da%20CognitHub%20e%20gostaria%20de%20falar%20com%20um%20especialista."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Falar com especialista
+                </a>
               </Button>
             </div>
           </motion.div>

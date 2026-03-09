@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ChallengesSection from "@/components/ChallengesSection";
@@ -9,8 +10,17 @@ import ResultsSection from "@/components/ResultsSection";
 import AboutSection from "@/components/AboutSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import DiagnosticFormModal from "@/components/DiagnosticFormModal";
 
 const Index = () => {
+  const [diagnosticOpen, setDiagnosticOpen] = useState(false);
+
+  useEffect(() => {
+    const handler = () => setDiagnosticOpen(true);
+    window.addEventListener("open-diagnostic", handler);
+    return () => window.removeEventListener("open-diagnostic", handler);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -24,6 +34,7 @@ const Index = () => {
       <AboutSection />
       <CTASection />
       <Footer />
+      <DiagnosticFormModal open={diagnosticOpen} onOpenChange={setDiagnosticOpen} />
     </div>
   );
 };

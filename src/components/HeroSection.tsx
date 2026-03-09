@@ -36,10 +36,16 @@ const HeroSection = () => {
               aumentam produtividade.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl">
-                Falar com um especialista
+              <Button variant="hero" size="xl" asChild>
+                <a
+                  href="https://wa.me/558699817348?text=Ol%C3%A1!%20Estou%20vindo%20da%20p%C3%A1gina%20da%20CognitHub%20e%20gostaria%20de%20falar%20com%20um%20especialista."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Falar com um especialista
+                </a>
               </Button>
-              <Button variant="hero-outline" size="xl">
+              <Button variant="hero-outline" size="xl" onClick={() => window.dispatchEvent(new CustomEvent('open-diagnostic'))}>
                 Solicitar diagnóstico
               </Button>
             </div>

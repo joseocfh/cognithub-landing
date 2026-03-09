@@ -22,7 +22,7 @@ const CTASection = () => {
             Pare de perder tempo com processos manuais e infraestrutura limitada. Com a CognitHub,
             sua empresa evolui com automação, inteligência e tecnologia estratégica.
           </p>
-          <Button variant="hero" size="xl">
+          <Button variant="hero" size="xl" onClick={() => window.dispatchEvent(new CustomEvent('open-diagnostic'))}>
             Agendar diagnóstico
           </Button>
         </motion.div>
